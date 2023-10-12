@@ -1,0 +1,26 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.btn {
+    padding: 5px;
+    background-color: rgba(108, 191, 145, 255);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: max-content;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body {
+    background-color: rgba(56, 74, 86, 255);
+    color: white;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}

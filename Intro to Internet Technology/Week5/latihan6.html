@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 6</title>
+</head>
+<body>
+    <script>
+        
+        angkaBatas = window.parseInt(prompt("Masukkan Angka (Angka yang anda masukkan akan menjadi batas)"));
+
+        for (i = 2; i<=angkaBatas; i++){
+        var check = 1;
+
+        for (j = 2; j < i; j++){
+            if (i % j === 0){
+                check = 0;
+            }
+        }
+
+        if (i > 1 && check == 1) {
+            document.write(i + "<br />");
+        }
+        }
+    </script>
+</body>
+</html>

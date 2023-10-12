@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+</head>
+<body>
+    <script>
+        nama = window.prompt("Masukkan Nama");
+        nilai = window.prompt("Masukkan Nilai");
+        alert(gradeMahasiswa(nilai));
+        alert(cekNilai(nilai));
+        
+        function gradeMahasiswa(nilai) {
+            if(nilai >=85) {
+                return "Grade A";
+            }else if(nilai >=80) {
+                return "Grade A-";
+            }else if(nilai >=75) {
+                return "Grade B+"
+            }else if(nilai >=70) {
+                return "Grade B";
+            }else if(nilai >=65) {
+                return "Grade B-";
+            }else if(nilai >=60) {
+                return "Grade C+";
+            }else if(nilai >=55) {
+                return "Grade C";
+            }else if(nilai >=45) {
+                return "Grade D"
+            }else if(nilai <=45) {
+                return "Grade E"
+            }
+        }
+        
+        function cekNilai(nilai) {
+            if(nilai >= 55) {
+                return "Selamat anda lulus";
+            }else{
+                return "Maaf anda belum lulus, tetap semangat :)";
+            }
+        }
+
+    </script>
+</body>
+</html>

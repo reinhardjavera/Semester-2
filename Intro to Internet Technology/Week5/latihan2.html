@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+</head>
+<body>
+    <script>
+        jumlahMhs = window.prompt("Masukkan jumlah total mahasiswa");
+        for(i=1; i<=jumlahMhs; i++){
+            console.log('test');
+            nama = window.prompt("Masukkan nama");
+            tugas = window.prompt("Masukkan nilai Tugas");
+            uts = window.prompt("Masukkan nilai UTS");
+            uas = window.prompt("Masukkan nilai UAS");
+
+            function nilaiAkhir(tugas, uts, uas) {
+                return (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
+            }
+            
+            function gradeMahasiswa(nilai) {
+            if(nilai >=85) {
+                return "Grade A";
+            }else if(nilai >=80) {
+                return "A-";
+            }else if(nilai >=75) {
+                return "B+"
+            }else if(nilai >=70) {
+                return "B";
+            }else if(nilai >=65) {
+                return "B-";
+            }else if(nilai >=60) {
+                return "C+";
+            }else if(nilai >=55) {
+                return "C";
+            }else if(nilai >=45) {
+                return "D"
+            }else if(nilai <=45) {
+                return "E"
+            }
+        }
+
+            document.write("<br /><br />" + i + ". " + nama + "<br />");
+            document.write("Tugas: " + tugas);
+            document.write("<br />UTS: " + uts);
+            document.write("<br />UAS: " + uas);
+            document.write("<br />Nilai Akhir: " + nilaiAkhir(tugas, uts, uas));
+            document.write("<br />Grade: " + gradeMahasiswa(nilaiAkhir(tugas, uts, uas)));
+        }
+    </script>
+</body>
+</html>

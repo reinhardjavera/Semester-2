@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7</title>
+</head>
+<body>
+    <script>
+        senin = window.parseInt(prompt("Masukkan Kehadiran Mahasiswa di Hari Senin"));
+        selasa = window.parseInt(prompt("Masukkan Kehadiran Mahasiswa di Hari Selasa"));
+        rabu = window.parseInt(prompt("Masukkan Kehadiran Mahasiswa di Hari Rabu"));
+        kamis = window.parseInt(prompt("Masukkan Kehadiran Mahasiswa di Hari Kamis"));
+        jumat = window.parseInt(prompt("Masukkan Kehadiran Mahasiswa di Hari Jumat"));
+
+        function kehadiranX(hari, jumlah){
+            document.write(hari);
+            
+            for (i = 1; i <= jumlah; i++){
+                document.write("x");
+            }
+            document.write("<br />");
+        }
+
+        document.write("<b>=== Grafik Jumlah Kehadiran Mahasiswa ===");
+        kehadiranX("<br /><br />Senin: ", senin);
+        kehadiranX("Selasa: ", selasa);
+        kehadiranX("Rabu: ", rabu);
+        kehadiranX("Kamis: ", kamis);
+        kehadiranX("Jumat: ", jumat);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <div class="card-body">
+                <h3>Chatty</h3>
+            </div>
+        </div>
+        <div id="chatBox" class="chatBox"></div>
+        		<div id="message" class="message">
+			<hr style="margin-top: 0" />
+			<div class="container">
+				<div class="row">
+					<div class="pesan col">
+						<form>
+							<div class="mb-3">
+								<label for="nama" class="form-label">Name</label>
+								<input type="text" class="form-control" id="sender" />
+							</div>
+							<div class="mb-3">
+								<label for="pesan" class="form-label">Message</label>
+								<textarea class="form-control" id="senderMsg" rows="3" ></textarea>
+							</div>
+							<div class="button text-center">
+								<button type="button" class="btnPengirim btn-primary px-5 py-1 borde">Send</button>
+							</div>
+						</form>
+					</div>
+					<div class="pesan col">
+						<form>
+							<fieldset disabled>
+								<div class="mb-3">
+									<label for="nama" class="form-label">Name</label>
+									<input type="text" class="form-control" placeholder="Me" value="Me" id="myName" />
+								</div>
+							</fieldset>
+							<div class="mb-3">
+								<label for="pesan" class="form-label">Message</label>
+								<textarea class="form-control" id="myMsg" rows="3"></textarea>
+							</div>
+							<div class="button text-center">
+								<button type="button" class="meButton btn-primary px-5 py-1">
+									Send
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jqeurt-3.6.0.min.js"></script>
+    <script>
+        			$(".btnPengirim").click(function pengirimBtn() {
+				nama = $("#sender").val();
+				pesan = $("#senderMsg").val();
+
+				var isiPesan = $("<div/>", {
+					class: "isiSenderMsg",
+				});
+				var pesanContent = $("<div/>", {
+					class: "pesanContent container",
+				}).appendTo(isiPesan);
+				var valNama = $("<span/>", {
+					class: "fw-bold",
+				})
+					.text(nama)
+					.appendTo(pesanContent);
+				var br = $("<br/>").appendTo(pesanContent);
+				var valPesan = $("<p/>", {
+					class: "chatBoxes",
+				})
+					.text(pesan)
+					.appendTo(pesanContent);
+
+				$("#chatBox").append(isiPesan);
+				$("#senderMsg").val("");
+				$("#sender").val("");
+			});
+
+			$(".meButton").click(function sayaBtn() {
+				var you = "you";
+				nama = $("#myName").val();
+				pesan = $("#").val();
+
+				var isiPesan = $("<div/>", {
+					class: "isiMyMsg text-end",
+				});
+				var pesanContent = $("<div/>", {
+					class: "pesanContent container",
+				}).appendTo(isiPesan);
+				var valNama = $("<span/>", {
+					class: "fw-bold",
+				})
+					.text(nama)
+					.appendTo(pesanContent);
+				var br = $("<br/>").appendTo(pesanContent);
+				var valPesan = $("<p/>", {
+					class: "chatBoxes",
+				})
+					.text(pesan)
+					.appendTo(pesanContent);
+
+				$("#chatBox").append(isiPesan);
+				$("#myMsg").val("");
+			});
+    </script>
+</body>
+</html>

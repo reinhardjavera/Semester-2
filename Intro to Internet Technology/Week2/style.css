@@ -1,0 +1,174 @@
+
+body {
+    font-family: arial;
+    font-size: 14px;
+}
+
+#logo {
+    font-family: "Consolas";
+    color: rgb(49, 104, 177);
+    text-shadow: 2px 2px 2px #7e7e7e;
+    font-size: 35px;
+}
+
+#logo2 {
+    font-family: "arial";
+    display: inline-block;
+    background-color: rgb(115, 142, 230);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+
+/* CSS for navigation bar */
+
+li {
+    display: inline;
+}
+
+li {
+    float: left;
+    line-height: 25px;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #3a3a3a;
+}
+
+ul {
+    background-color: #3a3a3a;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #3a3a3a;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* CSS for input name box */
+
+input {
+    background-color: rgb(177, 177, 177);
+    border-radius: 6px;
+    padding: 4px;
+    color: rgb(0, 0, 0);
+}
+
+/* CSS for submit button */
+
+button {
+    color: white;
+    background-color: rgb(53, 53, 121);
+    font-weight: bold;
+    border-radius: 9px;
+    padding: 3px;
+}
+
+/* CSS for table */
+
+.right{
+    text-align:right;
+}
+.left{
+    text-align: left;
+}
+
+.myTable {
+    border:1px solid rgb(0, 0, 0); border-collapse: collapse;
+}
+
+.myTable td {
+    border:1px solid rgb(0, 0, 0); padding: 0.3em;
+}
+
+.myTable th {
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#0a5f40;
+    font-weight: bold;
+    padding-left:2em;
+    color:white;
+    height:20px
+    
+}
+
+.myTable tr:nth-last-child(odd) {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+.myTable2 {
+    border:1px solid rgb(0, 0, 0); border-collapse: collapse;
+}
+
+.myTable2 td {
+    border:1px solid rgb(0, 0, 0); padding: 0.3em;
+}
+
+.myTable2 th {
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#0a5f40;
+    font-weight: bold;
+    padding-left:1em;
+    color:white;
+    height:20px
+    
+}
+
+.myTable2 tr:nth-last-child(even) {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+/* CSS for portofolio */
+
+.hovergambar {
+    text-align: center;
+}
+
+.hovergambar td {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+.hovergambar td img {
+    float: left;
+    margin: 5px 5px;
+    padding: 20px 20px;
+    background-color: rgb(47, 117, 209);
+}
+
+.hovergambar td img:hover {
+    background-color: rgb(24, 78, 150);
+}

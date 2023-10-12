@@ -1,0 +1,55 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+#logo img {
+    width: 80px;
+}
+
+#client h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top:20px;
+}
+
+.cards {
+    box-shadow: 1px 10px 15px 0px rgba(0,0,0,0.12);
+    background-color: #c7dfff;
+}
+
+.cards-links-img img {
+    width: 95px;
+    border-radius: 50%;
+}
+
+.cards-links-text h3 {
+    margin-top: 24px;
+}
+
+.cards-links-text p {
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+.subs {
+    background-color: rgb(245, 206, 154);
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px 0px rgba(0,0,0,0.12);
+}
+
+.image img {
+    width: 40px;
+    margin-left: 1rem;
+}
+
+.pt-tajir h3, .pt-tajir p {
+    margin: 0;
+}
+
+.footer-item {
+    background-color: #856aff;
+    border-radius: 10px;
+    padding: 20px;
+}

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1683165282 source:d:\code\codeblocks\semester 2\algorithms & data structure\week 10\w10_insertionbinaryheaps\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<limits.h>
+

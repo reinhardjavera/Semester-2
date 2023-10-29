@@ -1,0 +1,8 @@
+NIM     : 19293
+Nama    : ahmad
+Jurusan : informatika
+
+NIM     : 5417247
+Nama    : loler
+Jurusan : sistem informasi
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1681368244 source:d:\code\codeblocks\semester 2\algorithms & data structure\week 8\w08_00000077732_t1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+

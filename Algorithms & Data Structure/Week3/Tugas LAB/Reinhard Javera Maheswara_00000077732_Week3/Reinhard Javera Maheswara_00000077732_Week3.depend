@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1677681369 source:d:\code\codeblocks\semester 2\algorithms & data structure\week 3\tugas lab\reinhard javera maheswara_00000077732_week3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

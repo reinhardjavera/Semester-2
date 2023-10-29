@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1677053797 source:d:\code\codeblocks\semester 2 - algorithms & data structure\week 3\practice 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

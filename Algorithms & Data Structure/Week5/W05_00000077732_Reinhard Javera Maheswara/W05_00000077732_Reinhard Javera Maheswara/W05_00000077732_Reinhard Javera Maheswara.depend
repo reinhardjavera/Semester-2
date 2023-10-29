@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1678888173 source:d:\code\codeblocks\semester 2\algorithms & data structure\week 5\w05_00000077732_reinhard javera maheswara\w05_00000077732_reinhard javera maheswara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+
